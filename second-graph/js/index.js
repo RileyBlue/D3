@@ -23,7 +23,7 @@ var rects = svg.selectAll("rect")
                 .append("rect")
                 .attr("y", 20)
                 .attr("x", function(d, i) {
-                  return (i * 60);
+                  return x(i * 60)
                 })
                 .attr("width", 40)
                 .attr("height", function(d) {
